@@ -1,0 +1,14 @@
+/*
+    class styles
+*/
+.wrapper {
+  background-color: #EEF2F4;
+}
+.navigation-menu li {
+  background-color: #F6FAFC;
+  text-transform: uppercase;
+}
+
+.navigation-menu {
+  text-align: center;
+}
