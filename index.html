@@ -2,34 +2,96 @@
 <html>
   <head>
     <title> Responsible Layout </title>
-    <link ref="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
       <nav>
-        <h1>
+        <h1 class="name">
           Luca Tardito
         </h1>
         <ul class="navigation-menu">
-          <li> home </li>
-          <li> portfolio </li>
-          <li> contact </li>
+          <li> <a href="index.html"> home </a> </li>
+          <li> <a href="index.html#portfolio"> portfolio </a> </li>
+          <li> <a href="#contact"> contact </a> </li>
         </ul>
       </nav>
-      <header>
-        <img src="images/responsible-layout-profile.png" alt="profile picture" class="profile-picture">
-        <p>
+      <header class="clearfix">
+        <img src="images/responsive-layout-profile.png" alt="profile picture" class="profile-picture">
+        <p class="intro">
           Hi! I'm a front-end developer who loves responsible design and css. I recently finished a degree in front-end web development at Treehouse and am exited to put all my skills to use!
         </p>
       </header>
-      <main>
-        <h2> portfolio </h2>
-        <img src="images/portfolio-1.png"
-      </main>
-      <div>
+      <div class="main" id="portfolio">
+      <h2 class="second-title"> portfolio </h2>
+        <div class="project">
+          <img src="images/portfolio-1.png">
+          <h3> Marketing Page </h3>
+          <p>
+            This project shows the front page of a marketing website meant for a specific business I'm interested in.
+          </p>
+        </div>
+        <div class="project">
+          <img src="images/portfolio-2.png">
+          <h3> Search Page </h3>
+          <p>
+            This project searches through a specific database to find information that the user is trying to look up.
+          </p>
+        </div>
+        <div class="project">
+          <img src="images/portfolio-3.png">
+          <h3> Travel App </h3>
+          <p>
+            This project compares travel times based on different transportation methods and tells you the best one.
+          </p>
+        </div>
+        <div class="project">
+          <img src="images/portfolio-4.png">
+          <h3> Map of Favorite Spots </h3>
+          <p>
+            This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+          </p>
+        </div>
+        <div class="project">
+          <img src="images/portfolio-5.png">
+          <h3> Photo Gallery </h3>
+          <p>
+            This project shows pictures from a recent trip to viewer and allows them to easily navigate through photos.
+          </p>
+        </div>
+        <div class="project">
+          <img src="images/portfolio-6.png">
+          <h3> Calculator </h3>
+          <p>
+            Someone can enter in the numbers they want, and press the big blue button and get the result.
+          </p>
+        </div>
       </div>
-      <footer>
-      </footer>
-    <div>
+      <div>
+        <h1> Skills </h1>
+        <ul>
+          <li> HTML </li>
+          <li> CSS </li>
+          <li> Python </li>
+          <li> Javascript </li>
+      </div>
+    <div class="contacts clearfix" id="contact">
+      <h2 class="second-title"> contact </h2>
+      <p class="last">
+        if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
+      </p>
+      <p class="last"> Phone <b>+353 (83) 331 1181</b> </p>
+      <p class="last"> Email <b>lucatardi@icloud.com</b> </p>
+    </div>
+    <footer class="clearfix">
+      <h6 class="my"> Luca Tardito </h6>
+      <h6 class="top"> BACK TO TOP </h6>
+      <ul class="navigation-menu top hide">
+        <li> <a href="index.html"> home </a> </li>
+        <li> <a href="index.html#portfolio"> portfolio </a> </li>
+        <li> <a href="#contact"> contact </a> </li>
+     </ul>
+    </footer>
   </body>
 </html>
