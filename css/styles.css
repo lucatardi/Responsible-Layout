@@ -127,9 +127,9 @@ h6 {
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .last {
@@ -141,6 +141,26 @@ h6 {
 
 .hide {
   display: none;
+}
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.skills li {
+  font-size: 25px;
+}
+
+.good {
+  color: lightgreen;
+  font-size: 28px;
+}
+
+.notgood {
+  color: red;
+  font-size: 23px;
 }
 
 @media (min-width: 768px) {
@@ -206,6 +226,11 @@ h6 {
   .my {
     font-size: 30px;
   }
+
+  .skills li {
+    display: inline-block;
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -215,5 +240,9 @@ h6 {
 
   .project p {
     padding: 20px 40px;
+  }
+
+  .skills li {
+    padding: 0 20px;
   }
 }
